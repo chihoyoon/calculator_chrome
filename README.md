@@ -1,1 +1,1 @@
-# calculator_chrome
+# Calculator (Chrome Extensions)

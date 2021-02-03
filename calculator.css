@@ -1,0 +1,44 @@
+body {
+    background-color: rebeccapurple;
+    color: skyblue;
+}
+
+input {
+    background-color: thistle;
+    color:darkblue;
+    border-style: solid;
+    border-color: slateblue;   
+    border-radius: 10%;
+    margin: 0.3em;
+    padding: 1em;
+    width: 16.6em;
+    height: 3em;
+    text-align: right;
+    font-family: monospace;   
+}
+
+
+button {
+    background-color: rebeccapurple;
+    color: skyblue;
+    border-style: solid;
+    border-color: slateblue;
+    border-radius: 20%;  
+    margin: 0.3em;
+    padding: 1em;
+    width: 4em;
+    height: 3em;
+    text-align: center;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0.5em 1em 0;
+
+}
+
+button:active {
+    box-shadow: 0 0.3em 0.5em 0;
+    transform: translateY(0.5em);  
+}    
