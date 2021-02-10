@@ -3,18 +3,35 @@ body {
     color: skyblue;
 }
 
-input {
+#monitor {
     background-color: thistle;
     color:darkblue;
-    border-style: solid;
+    border-style: solid solid none solid;
     border-color: slateblue;   
-    border-radius: 10%;
-    margin: 0.3em;
-    padding: 1em;
+    border-radius: 10% 10% 0 0;
+    margin: 0.3em 0.3em 0 0.3em;
+    padding: 1em 1em 0 1em ;
     width: 16.6em;
-    height: 3em;
+    height: 1em;
     text-align: right;
-    font-family: monospace;   
+    font-family: monospace;
+    outline: none;   
+}
+
+#monitorResult {
+    background-color: thistle;
+    color:darkblue;
+    border-style: none solid solid solid;
+    border-color: slateblue;   
+    border-radius: 0 0 10% 10%;
+    margin: 0 0.3em 0.3em 0.3em;
+    padding: 0 1em 1em 1em;
+    width: 16.6em;
+    height: 1em;
+    text-align: right;
+    font-family: monospace;
+    font-weight: bold;
+    outline: none;  
 }
 
 
@@ -31,14 +48,14 @@ button {
     text-align: center;
     font-family: monospace;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover {
-    box-shadow: 0 0.5em 1em 0;
-
+    box-shadow: 0 0.5em 1em 0; 
 }
 
 button:active {
     box-shadow: 0 0.3em 0.5em 0;
-    transform: translateY(0.5em);  
+    transform: translateY(0.5em);    
 }    
