@@ -11,7 +11,24 @@ let result = document.querySelector('#result')
 for (let i = 0; i < button.length; i++) {
     let value = button[i].getAttribute("value");
     button[i].addEventListener('click', () => {
-        monitor.append(value);
+        if (button[i] !== result && button[i] !== clearElement) {
+            monitor.append(value);
+        }
+        if (button[i] === result) {
+            let _result = eval(monitor.innerText);
+            monitor.append(" = ");
+            monitorResult.append(_result); 
+        }
+    
+        if (button[i] === allClear) {
+    
+        }
+    
+        if (button[i] === clearElement) {
+           
+    
+        }
+    
     })
-     
 }
+    
