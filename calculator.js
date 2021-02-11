@@ -25,9 +25,11 @@ for (let i = 0; i < button.length; i++) {
             monitorResult.innerText = "";    
         }
     
-        if (button[i] === clearElement) {      
-            monitor.lastChild.deleteData(0,-1)
-            monitorResult.innerText = "";            
+        if (button[i] === clearElement) { 
+            let delLastStr = monitor.innerText.substr(0,monitor.innerText.length-1);
+            monitor.innerText = "";
+            monitor.append(delLastStr);
+            monitorResult.innerText = ""; 
         }       
              
     })
