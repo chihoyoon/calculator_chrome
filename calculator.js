@@ -16,7 +16,7 @@ for (let i = 0; i < button.length; i++) {
         }
         if (button[i] === result) {
             let _result = eval(monitor.innerText);
-            monitor.append(" = ");
+            monitorResult.innerText = "";
             monitorResult.append(_result); 
         }
     
