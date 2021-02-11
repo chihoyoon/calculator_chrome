@@ -11,7 +11,7 @@ let result = document.querySelector('#result')
 for (let i = 0; i < button.length; i++) {
     let value = button[i].getAttribute("value");
     button[i].addEventListener('click', () => {
-        if (button[i] !== result && button[i] !== clearElement) {
+        if (button[i] !== result && button[i] !== clearElement && button[i] !== allClear) {
             monitor.append(value);
         }
         if (button[i] === result) {
@@ -21,14 +21,15 @@ for (let i = 0; i < button.length; i++) {
         }
     
         if (button[i] === allClear) {
-    
+            monitor.innerText = "";
+            monitorResult.innerText = "";    
         }
     
-        if (button[i] === clearElement) {
-           
-    
-        }
-    
+        if (button[i] === clearElement) {      
+            monitor.lastChild.deleteData(0,-1)
+            monitorResult.innerText = "";            
+        }       
+             
     })
 }
     
