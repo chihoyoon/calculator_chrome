@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Simple Calculator",
+    "version": "1.0.0",
+    "description": "Intuitive and simple calculator",
+    "icons": { "16": "caculator_16.png",
+               "48": "caculator_48.png",
+               "128": "caculator_128.png" },
+  
+    "browser_action": { "default_icon": "caculator_16.png",
+                         "default_title": "Simple Calculator",
+                         "default_popup": "index.html" },
+    "page_action": { "default_icon": "caculator_16.png",
+                     "default_title": "Simple Calculator",
+                     "default_popup": "index.html" },
+    
+    "author": "Danny"
+  }
+
